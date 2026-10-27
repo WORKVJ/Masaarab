@@ -407,7 +407,7 @@ export const CATEGORIES_DATA: Category[] = [
     tagline: "Maintenance, Repair & Operations: Process Valves, Exotic Alloys, Pumps & Telemetry",
     shortDesc: "Turnkey industrial MRO solutions comprising API 6D process valves, high-pressure alloy pipe fittings, heavy-duty slurry pumps, and precision digital instrumentation with full Mill Test Certificates.",
     iconName: "Wrench",
-    bannerImage: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
+    bannerImage: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=1200&q=80",
     productCount: "4 Core Lines",
     leadStandards: ["API 6D & API 607", "ASME B16.34 / B16.5", "EN 10204 3.1 MTC", "ATEX / SIL 2/3"],
     fulfillmentLocation: "Al Khobar, Jubail & Yanbu Fast-Track Warehouses",
@@ -494,7 +494,7 @@ export const CATEGORIES_DATA: Category[] = [
           "Heavy-duty grease-lubricated oversized bearing assemblies",
           "Cartridge mechanical seals with Plan 53A/54 barrier fluid systems"
         ],
-        image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80",
         category: "mro-solutions"
       },
       {
