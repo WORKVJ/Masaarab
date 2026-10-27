@@ -178,18 +178,23 @@ export default function Footer({ onOpenRfq }: FooterProps) {
                 </a>
               </li>
               <li>
-                <a href="#products" className="hover:text-[#0284c7] transition-colors">
-                  Services
+                <a href="#products" className="hover:text-[#ea580c] transition-colors">
+                  Cooling solution
                 </a>
               </li>
               <li>
-                <a href="#products" className="hover:text-[#0284c7] transition-colors">
-                  Programs
+                <a href="#products" className="hover:text-[#ea580c] transition-colors">
+                  Chemical solution
                 </a>
               </li>
               <li>
-                <a href="#why-us" className="hover:text-[#0284c7] transition-colors">
-                  Blogs
+                <a href="#products" className="hover:text-[#ea580c] transition-colors">
+                  Safety solution
+                </a>
+              </li>
+              <li>
+                <a href="#products" className="hover:text-[#ea580c] transition-colors">
+                  MRO Solutions
                 </a>
               </li>
               <li>

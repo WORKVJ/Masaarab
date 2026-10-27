@@ -30,14 +30,14 @@ export default function HomePage() {
         {/* Hero Section */}
         <Hero onOpenRfq={() => handleOpenRfq("")} />
 
+        {/* Primary Industrial Departments & Detailed Solutions Matrix (Direct Under Landing Page) */}
+        <ProductsSection onSelectProductForRfq={(name) => handleOpenRfq(name)} />
+
         {/* Client Partners Infinite Marquee */}
         <ClientMarquee />
 
         {/* Corporate Profile & Saudi Vision 2030 */}
         <AboutSection onOpenRfq={() => handleOpenRfq("")} />
-
-        {/* Interactive Products & Solutions Matrix */}
-        <ProductsSection onSelectProductForRfq={(name) => handleOpenRfq(name)} />
 
         {/* Why Choose Masar Arabia (6 Value Pillars) */}
         <WhyChooseUs onOpenRfq={() => handleOpenRfq("")} />

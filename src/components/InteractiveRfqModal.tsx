@@ -27,7 +27,7 @@ export default function InteractiveRfqModal({
   initialProduct = "" 
 }: RfqModalProps) {
   const [productName, setProductName] = useState(initialProduct);
-  const [category, setCategory] = useState("cooling-frp");
+  const [category, setCategory] = useState("cooling-solution");
   const [companyName, setCompanyName] = useState("");
   const [contactName, setContactName] = useState("");
   const [email, setEmail] = useState("");
