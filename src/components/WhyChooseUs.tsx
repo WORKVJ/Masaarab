@@ -41,7 +41,7 @@ export default function WhyChooseUs({ onOpenRfq }: WhyChooseUsProps) {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200/80 text-[#c2410c] text-xs font-bold mb-3 shadow-xs">
             <ShieldCheck className="w-3.5 h-3.5 text-[#ea580c]" />
             <span>Why Choose Masar Arabia</span>
@@ -64,7 +64,7 @@ export default function WhyChooseUs({ onOpenRfq }: WhyChooseUsProps) {
             return (
               <div
                 key={item.title}
-                className="relative p-8 rounded-3xl bg-white border border-slate-200/90 hover:border-orange-300 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
+                className={`relative p-8 rounded-3xl bg-white border border-slate-200/90 hover:border-orange-300 shadow-sm transition-all duration-300 group flex flex-col justify-between card-interactive reveal-on-scroll stagger-${(index % 6) + 1}`}
               >
                 <div>
                   {/* Icon Container with subtle gradient */}
@@ -101,7 +101,7 @@ export default function WhyChooseUs({ onOpenRfq }: WhyChooseUsProps) {
         </div>
 
         {/* Bottom Banner Call to Action */}
-        <div className="mt-16 rounded-[36px] bg-gradient-to-r from-[#0a2540] via-[#0f2e4e] to-[#0a2540] p-8 md:p-12 text-white shadow-2xl relative overflow-hidden border border-slate-800">
+        <div className="mt-16 rounded-[36px] bg-gradient-to-r from-[#0a2540] via-[#0f2e4e] to-[#0a2540] p-8 md:p-12 text-white shadow-2xl relative overflow-hidden border border-slate-800 reveal-scale">
           <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-500/15 via-sky-500/10 to-transparent pointer-events-none" />
 
           <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">

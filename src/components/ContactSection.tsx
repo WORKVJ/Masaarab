@@ -38,7 +38,7 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200/80 text-[#c2410c] text-xs font-bold mb-3 shadow-xs">
             <Mail className="w-3.5 h-3.5 text-[#ea580c]" />
             <span>Connect with Masar Arabia</span>
@@ -57,7 +57,7 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
           {/* Left Column: Office Hubs & Direct Contacts */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-5 space-y-6 reveal-left">
             
             {/* Quick Contact Cards */}
             <div className="p-6 rounded-3xl bg-[#fafbfc] border border-slate-200/80 space-y-5">
@@ -132,8 +132,8 @@ export default function ContactSection() {
           </div>
 
           {/* Right Column: Interactive Contact Form */}
-          <div className="lg:col-span-7">
-            <div className="p-8 sm:p-10 rounded-3xl bg-[#fafbfc] border border-slate-200/90 shadow-xl">
+          <div className="lg:col-span-7 reveal-right">
+            <div className="p-8 sm:p-10 rounded-3xl bg-[#fafbfc] border border-slate-200/90 shadow-xl card-interactive">
               {formSubmitted ? (
                 <div className="text-center py-12 space-y-4">
                   <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">

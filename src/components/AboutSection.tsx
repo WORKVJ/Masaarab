@@ -42,7 +42,7 @@ export default function AboutSection({ onOpenRfq }: AboutSectionProps) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-4 pb-12 border-b border-slate-200/80">
             
             {/* Top Left: Two Round Buttons + Services Description (Reference Image Left) */}
-            <div className="lg:col-span-4 flex flex-col justify-center space-y-4 pr-0 lg:pr-4">
+            <div className="lg:col-span-4 flex flex-col justify-center space-y-4 pr-0 lg:pr-4 reveal-left">
               <div className="flex items-center gap-2.5">
                 <div className="w-10 h-10 rounded-full bg-[#0a2540] flex items-center justify-center text-white shadow-md shadow-slate-900/10 hover:scale-105 transition-transform">
                   <Factory className="w-4 h-4 text-sky-400" />
@@ -66,8 +66,8 @@ export default function AboutSection({ onOpenRfq }: AboutSectionProps) {
             </div>
 
             {/* Top Center: Signature Sculpted Cutout Notch (Reference Image Center) */}
-            <div className="lg:col-span-4 flex flex-col items-center justify-center">
-              <div className="w-full max-w-sm rounded-[32px] p-6 bg-gradient-to-b from-sky-100/80 via-sky-50/50 to-white/90 border border-sky-200/80 shadow-[0_8px_30px_rgb(2,132,199,0.06)] text-center relative">
+            <div className="lg:col-span-4 flex flex-col items-center justify-center reveal-scale">
+              <div className="w-full max-w-sm rounded-[32px] p-6 bg-gradient-to-b from-sky-100/80 via-sky-50/50 to-white/90 border border-sky-200/80 shadow-[0_8px_30px_rgb(2,132,199,0.06)] text-center relative card-interactive">
                 
                 {/* Floating Top Pill Button (Matches 'Open Account ->' from reference) */}
                 <button
@@ -89,7 +89,7 @@ export default function AboutSection({ onOpenRfq }: AboutSectionProps) {
             </div>
 
             {/* Top Right: Stat Highlight (Reference Image Right) */}
-            <div className="lg:col-span-4 flex flex-col items-start lg:items-end justify-center space-y-2 pl-0 lg:pl-4">
+            <div className="lg:col-span-4 flex flex-col items-start lg:items-end justify-center space-y-2 pl-0 lg:pl-4 reveal-right">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 border border-slate-200/90 text-[11px] font-bold text-slate-600 uppercase tracking-wider">
                 <CheckCircle2 className="w-3 h-3 text-[#ea580c]" />
                 <span>TOTAL PROJECTS</span>
@@ -123,7 +123,7 @@ export default function AboutSection({ onOpenRfq }: AboutSectionProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           
           {/* ----------------- LEFT COLUMN ----------------- */}
-          <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
+          <div className="lg:col-span-6 flex flex-col justify-center space-y-6 reveal-left">
             
             {/* Eyebrow Pill Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50/90 border border-orange-200/80 text-[#c2410c] text-xs font-bold uppercase tracking-wider shadow-xs w-max">
@@ -265,14 +265,14 @@ export default function AboutSection({ onOpenRfq }: AboutSectionProps) {
           </div>
 
           {/* ----------------- RIGHT COLUMN (Payrot Reference Visual Composition) ----------------- */}
-          <div className="lg:col-span-6 relative flex justify-center items-center">
+          <div className="lg:col-span-6 relative flex justify-center items-center reveal-right">
             
             {/* Outer Container matching the Payrot card structure */}
             <div className="relative w-full max-w-[480px] aspect-square rounded-[40px] p-4 sm:p-5 flex items-center justify-center">
               
               {/* Distinctive Sky-Blue Geometric Cutout Panel (Notice chamfered top-left corner matching reference) */}
               <div 
-                className="absolute inset-0 rounded-[38px] bg-gradient-to-br from-[#38bdf8] via-[#0284c7] to-[#0369a1] shadow-2xl overflow-hidden"
+                className="absolute inset-0 rounded-[38px] bg-gradient-to-br from-[#38bdf8] via-[#0284c7] to-[#0369a1] shadow-2xl overflow-hidden card-interactive"
                 style={{
                   clipPath: "polygon(22% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 22%)"
                 }}
@@ -298,7 +298,7 @@ export default function AboutSection({ onOpenRfq }: AboutSectionProps) {
               </div>
 
               {/* ---------------- Floating Badge 1 (Top Left: Matches PAYROT brand badge) ---------------- */}
-              <div className="absolute top-4 left-2 z-20 flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-[0_10px_25px_rgba(0,0,0,0.12)]">
+              <div className="absolute top-4 left-2 z-20 flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-[0_10px_25px_rgba(0,0,0,0.12)] animate-float">
                 <div className="w-8 h-8 rounded-xl bg-[#0a2540] flex items-center justify-center text-white shrink-0">
                   <Factory className="w-4 h-4 text-[#ea580c]" />
                 </div>
@@ -309,7 +309,7 @@ export default function AboutSection({ onOpenRfq }: AboutSectionProps) {
               </div>
 
               {/* ---------------- Floating Badge 2 (Top Right: Matches PAYMENT REQUEST Sent) ---------------- */}
-              <div className="absolute top-12 -right-2 sm:-right-4 z-20 flex items-center gap-2 px-3.5 py-2.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-[0_10px_25px_rgba(0,0,0,0.12)]">
+              <div className="absolute top-12 -right-2 sm:-right-4 z-20 flex items-center gap-2 px-3.5 py-2.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-[0_10px_25px_rgba(0,0,0,0.12)] animate-float-delayed">
                 <div className="w-7 h-7 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
                   <FileCheck className="w-4 h-4" />
                 </div>
@@ -320,7 +320,7 @@ export default function AboutSection({ onOpenRfq }: AboutSectionProps) {
               </div>
 
               {/* ---------------- Floating Badge 3 (Bottom Left: Matches 1500 USD Paid with Blue Check) ---------------- */}
-              <div className="absolute -bottom-3 left-4 sm:left-6 z-20 flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-[0_14px_35px_rgba(0,0,0,0.15)]">
+              <div className="absolute -bottom-3 left-4 sm:left-6 z-20 flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-[0_14px_35px_rgba(0,0,0,0.15)] animate-float">
                 <div className="w-8 h-8 rounded-xl bg-orange-50 border border-orange-200 flex items-center justify-center text-[#ea580c] shrink-0">
                   <Building2 className="w-4 h-4" />
                 </div>

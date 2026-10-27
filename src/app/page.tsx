@@ -11,6 +11,8 @@ import ProjectShowcase from "@/components/ProjectShowcase";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import InteractiveRfqModal from "@/components/InteractiveRfqModal";
+import SmoothScrollProvider from "@/components/SmoothScrollProvider";
+
 export default function HomePage() {
   const [rfqModalOpen, setRfqModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState("");
@@ -21,7 +23,8 @@ export default function HomePage() {
   };
 
   return (
-    <div className="relative min-h-screen flex flex-col bg-white">
+    <SmoothScrollProvider>
+      <div className="relative min-h-screen flex flex-col bg-white">
       {/* Navigation */}
       <Navbar onOpenRfq={() => handleOpenRfq("")} />
 
@@ -58,6 +61,7 @@ export default function HomePage() {
         onClose={() => setRfqModalOpen(false)}
         initialProduct={selectedProduct}
       />
-    </div>
+      </div>
+    </SmoothScrollProvider>
   );
 }

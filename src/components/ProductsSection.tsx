@@ -44,7 +44,7 @@ export default function ProductsSection({ onSelectProductForRfq }: ProductsSecti
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-10">
+        <div className="text-center max-w-2xl mx-auto mb-10 reveal-on-scroll">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-200 text-[#ea580c] text-xs font-bold uppercase tracking-wider mb-2.5">
             <span>Product Catalog</span>
           </div>
@@ -57,7 +57,7 @@ export default function ProductsSection({ onSelectProductForRfq }: ProductsSecti
         </div>
 
         {/* 4 Clean Department Selection Tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-10 reveal-scale stagger-1">
           {CATEGORIES_DATA.map((dept) => {
             const isSelected = selectedDeptId === dept.id;
             return (
@@ -78,7 +78,7 @@ export default function ProductsSection({ onSelectProductForRfq }: ProductsSecti
         </div>
 
         {/* Department Info Strip */}
-        <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-xs">
+        <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-xs reveal-on-scroll stagger-2">
           <div>
             <div className="flex items-center gap-2 text-xs font-bold text-[#ea580c] uppercase tracking-wider mb-1">
               <CheckCircle2 className="w-3.5 h-3.5" />
@@ -104,10 +104,10 @@ export default function ProductsSection({ onSelectProductForRfq }: ProductsSecti
 
         {/* 4 Clean Product Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {currentDept.items.map((product) => (
+          {currentDept.items.map((product, index) => (
             <div
               key={product.id}
-              className="group bg-white rounded-2xl border border-slate-200/90 hover:border-orange-400 p-4 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between"
+              className={`group bg-white rounded-2xl border border-slate-200/90 hover:border-orange-400 p-4 transition-all duration-300 card-interactive flex flex-col justify-between reveal-on-scroll stagger-${(index % 4) + 1}`}
             >
               <div>
                 {/* Photo container */}

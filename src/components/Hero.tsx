@@ -57,7 +57,7 @@ export default function Hero({ onOpenRfq }: HeroProps) {
               LEFT COLUMN (Exact match to Reference Image Typography & Hierarchy)
               [ Eyebrow with ! ] [ Big 3-line Headline ] [ Avatar Stack ] [ Arrow CTA & Text ]
           ========================================================================= */}
-          <div className="lg:col-span-6 flex flex-col justify-center space-y-7">
+          <div className="lg:col-span-6 flex flex-col justify-center space-y-7 reveal-left">
             
             {/* Eyebrow: Matches 'KEEP YOUR MONEY SAFE !' from reference */}
             <div className="flex items-center gap-2">
@@ -148,13 +148,13 @@ export default function Hero({ onOpenRfq }: HeroProps) {
               RIGHT COLUMN: 3D FLOATING MOCKUPS (Matches Reference 3D Floating Phones)
               [ Clean white background with glowing orange/blue ribbons ]
           ========================================================================= */}
-          <div className="lg:col-span-6 relative flex justify-center items-center">
+          <div className="lg:col-span-6 relative flex justify-center items-center reveal-right">
             
             {/* Outer Wrapper with soft hover 3D tilt */}
             <div className="relative w-full max-w-lg aspect-square flex items-center justify-center">
               
               {/* Main 3D Floating Mockups Visual */}
-              <div className="relative z-10 w-full h-full flex items-center justify-center">
+              <div className="relative z-10 w-full h-full flex items-center justify-center animate-float">
                 <img
                   src="/img/hero_3d_floating.png"
                   alt="Masar Arabia Industrial 3D Engineering Platform"
@@ -163,7 +163,7 @@ export default function Hero({ onOpenRfq }: HeroProps) {
               </div>
 
               {/* Floating Live Telemetry Badge (Top Right) */}
-              <div className="absolute top-2 right-2 sm:right-6 z-20 flex items-center gap-2.5 px-3.5 py-2 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-xl">
+              <div className="absolute top-2 right-2 sm:right-6 z-20 flex items-center gap-2.5 px-3.5 py-2 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-xl animate-float-delayed">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
                 <div>
                   <div className="text-[11px] font-black text-[#0a2540]">UNIT 1 OPERATIONAL</div>
@@ -172,7 +172,7 @@ export default function Hero({ onOpenRfq }: HeroProps) {
               </div>
 
               {/* Floating Certification Badge (Bottom Left) */}
-              <div className="absolute bottom-4 left-2 sm:left-4 z-20 flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-xl">
+              <div className="absolute bottom-4 left-2 sm:left-4 z-20 flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-xl animate-float">
                 <div className="w-7 h-7 rounded-xl bg-orange-50 border border-orange-200 flex items-center justify-center text-[#ea580c] shrink-0">
                   <ShieldCheck className="w-4 h-4" />
                 </div>
